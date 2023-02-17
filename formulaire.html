@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="cssformulaire.css">
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <h1>Formulaire de base</h1>
+        <label for="prenom">Prénom:</label>
+        <input type="text" name="prenom" id="prenom" placeholder="Ex: Sophie">
+        <label for="nom">Nom:</label>
+        <input type="text" name="nom" id="nom" placeholder="Ex: Dubois">
+        <p>
+          <label for="age">Age:</label>
+          <input
+            type="text"
+            name="age"
+            id="age"
+            placeholder="Ex: 102"
+            size="5"
+            maxlength="3"
+            pattern="[0-9]{2-3}">
+
+          <label for="tel">N° Tel:</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="0736751909"
+            size="12"
+            maxlength="10"
+            pattern="[0-9]{10}">
+        </p>
+        <p>
+          <label for="sexe">Sexe:</label>
+          <select name="sexe" id="sexe">
+            <option value="">Choix sexe</option>
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+            <option value="non">Ne pas se prononcer</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="email">Adresse mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="blabla@gmail.com">
+        </p>
+
+        <label for="adresse">Adresse postale:</label>
+        <input
+          type="text"
+          name="adresse"
+          id="adresse"
+          size="40"
+          maxlength="38"
+          placeholder="XX rue de Machin">
+
+        <label for="code">Code postal:</label>
+        <input
+          type="text"
+          name="code"
+          id="code"
+          placeholder="59000"
+          size="7"
+          maxlength="5"
+          pattern="[0-9]{5}">
+
+        <label for="ville">Ville:</label>
+        <input type="text" name="ville" id="ville" placeholder="Lille">
+
+        <p>
+          <label for="metier">Métier exercé:</label>
+          <select name="metier" id="metier">
+            <option value="">Métier</option>
+            <option value="agriculteur">Agriculteur</option>
+            <option value="ouvrier">Ouvrier</option>
+            <option value="auto">Auto-entrepreneur</option>
+            <option value="cadre">Cadre</option>
+            <option value="salarie">Salarié fonction publique</option>
+            <option value="artiste">Artiste</option>
+            <option value="ssemploi">Sans emploi</option>
+            <option value="Tanguy">Tanguy</option>
+            <option value="autre">Autre...</option>
+          </select>
+        </p>
+
+        <label for="nationalite">Nationalité:</label>
+        <select name="nationalite" id="nationalite">
+          <option value="">Nationalité</option>
+          <option value="belge">Belge</option>
+          <option value="france">Français.e</option>
+          <option value="malte">Maltais.e</option>
+          <option value="suisse">Suisse</option>
+          <option value="monaco">Monegasque</option>
+          <option value="avatar">Na'avi</option>
+          <option value="taboulistant">Taboulistanais.e</option>
+          <option value="listenbourg">Listenbourgeois.e</option>
+          <option value="autre">Autre...</option>
+        </select>
+
+        <label for="borndate">Date de naissance:</label>
+        <input type="date" name="borndate" id="borndate">
+
+        <label for="bornplace">Pays de naissance:</label>
+        <input
+          type="text"
+          name="bornplace"
+          id="bornplace"
+          placeholder="Ex: Alaska">
+
+        <p>
+          <label for="securite">Numéro de sécurité social:</label>
+          <input
+            type="text"
+            name="securite"
+            id="securite"
+            placeholder="Ex: 198123354462165"
+            size="20"
+            maxlength="15"
+            pattern="[0-9]{15}">
+        </p>
+
+        <label for="passeport">Numéro de passeport:</label>
+        <input
+          type="text"
+          name="passeport"
+          id="passeport"
+          placeholder="Ex: 6216521148"
+          size="15"
+          maxlength="10"
+          pattern="[0-9]{10}">
+
+        <label for="passeportdate">Date de délivrance du passeport:</label>
+        <input type="date" name="passeportdate" id="passeportdate">
+
+        <label for="validity">Date de validité du passeport:</label>
+        <input type="date" name="validity" id="validity">
+
+        <p>
+          <label for="loisir"
+            >Description de vos loisirs (1000 lettres max):</label
+          ><br>
+          <textarea
+            rows="20"
+            cols="50"
+            name="loisir"
+            id="loisir"
+            placeholder="Le cheval c'est vraiment génial"
+            maxlength="1000"
+          ></textarea>
+        </p>
+
+        <p>
+          <label for="envoyer"></label>
+          <input type="submit" name="envoyer" id="envoyer">
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
