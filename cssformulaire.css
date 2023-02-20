@@ -1,0 +1,19 @@
+body {
+background-color: #ecc993;
+
+}
+
+fieldset {
+  border-width: 20px;
+  color: brown;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  font-family: 'Montserrat', sans-serif;
+}
